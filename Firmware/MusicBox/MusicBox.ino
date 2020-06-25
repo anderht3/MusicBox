@@ -1,9 +1,14 @@
+#include "MusicBoxPower.h"
+
+MusicBoxPower pwr;
+
 void setup() {
-  // put your setup code here, to run once:
+  pwr.begin();
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  bool chrgStatus = pwr.isCharging();
+  uint16_t voltage = pwr.getBatteryVoltage();
 
 }
